@@ -81,10 +81,17 @@
         windows: windows {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LA(DOWN)) &kp LC(LG(RIGHT))>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL &kp LEFT_ALT &kp DOWN>,
+                <&macro_release>,
+                <&macro_wait_time 50>,
+                <&kp LEFT_META &kp LEFT_CONTROL &kp RIGHT>,
+                <&macro_release>;
+
             label = "WINDOWS";
-            wait-ms = <100>;
-            tap-ms = <50>;
+            wait-ms = <30>;
+            tap-ms = <30>;
         };
     };
 
