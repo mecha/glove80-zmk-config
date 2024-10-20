@@ -124,6 +124,22 @@
             wait-ms = <10>;
             tap-ms = <10>;
         };
+
+        tmux: tmux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp B>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
+
+            label = "TMUX";
+            wait-ms = <10>;
+            tap-ms = <10>;
+        };
     };
 
     keymap {
@@ -140,7 +156,7 @@
 
             bindings = <
 &kp F1      &kp F2         &kp F3     &kp F4            &kp F5                                                                                                                               &kp F6    &kp F7     &kp F8        &kp F9     &kp F10
-&kp GRAVE   &kp N1         &kp N2     &kp N3            &kp N4             &kp N5                                                                                                    &kp N6  &kp N7    &kp N8     &kp N9        &kp N0     &kp LC(B)
+&kp GRAVE   &kp N1         &kp N2     &kp N3            &kp N4             &kp N5                                                                                                    &kp N6  &kp N7    &kp N8     &kp N9        &kp N0     &tmux
 &kp TAB     &kp Q          &kp W      &kp F             &kp P              &kp B                                                                                                     &kp J   &kp L     &kp U      &kp Y         &kp SQT    &kp MINUS
 &kp ESCAPE  &kp A          &kp R      &kp S             &kp T              &kp G                                                                                                     &kp M   &kp N     &kp E      &kp I         &kp O      &kp SEMICOLON
 &kp HOME    &kp Z          &kp X      &kp C             &kp D              &kp V   &skq LEFT_SHIFT  &kp LEFT_CONTROL  &linux_vm   &windows      &kp RIGHT_CONTROL  &skq RIGHT_SHIFT  &kp K   &kp H     &kp COMMA  &kp PERIOD    &kp SLASH  &kp END
