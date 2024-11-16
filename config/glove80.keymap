@@ -29,7 +29,7 @@
             label = "LAYER_TAP_DANCE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&mo 1>, <&to 1>;
+            bindings = <&mo 2>, <&to 2>;
         };
 
         magic: magic_hold_tap {
@@ -160,7 +160,18 @@
 &kp TAB     &kp Q      &kp W      &kp F             &kp P              &kp B                                                                                           &kp J   &kp L     &kp U      &kp Y         &kp SQT    &kp BACKSLASH
 &kp ESCAPE  &kp A      &kp R      &kp S             &kp T              &kp G                                                                                           &kp M   &kp N     &kp E      &kp I         &kp O      &kp SEMICOLON
 &kp HOME    &kp Z      &kp X      &kp C             &kp D              &kp V   &kp BACKSPACE  &kp DELETE    &linux_vm  &windows      &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp K   &kp H     &kp COMMA  &kp PERIOD    &kp SLASH  &kp END
-&magic 2 0  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &skq LSHIFT    &kp LEFT_ALT  &tmux      &kp LEFT_GUI  &kp ENTER      &kp SPACE                  &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &mo 1
+&magic 3 0  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &skq LSHIFT    &kp LEFT_ALT  &tmux      &kp LEFT_GUI  &kp ENTER      &kp SPACE                  &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &mo 2
+            >;
+        };
+
+        gaming {
+            bindings = <
+&trans      &trans        &trans  &trans  &trans                                                                     &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans  &trans  &trans  &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans  &trans  &trans  &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans        &trans  &trans  &trans  &trans                                                     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHIFT  &trans        &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL   &kp NUMBER_6  &kp N7  &kp N8  &kp N9          &kp SPACE  &kp M   &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &to 0
             >;
         };
 
@@ -181,8 +192,8 @@
 &none        &none            &none            &none            &none            &none                                                             &none  &none  &none  &none  &none  &none
 &none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none  &none
 &bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
-&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
-&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &to 3
+&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &to 1  &none  &none  &none  &none  &none  &sys_reset
+&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &to 4
             >;
         };
 
