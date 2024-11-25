@@ -160,7 +160,7 @@
 &kp TAB     &kp Q      &kp W      &kp F             &kp P              &kp B                                                                                        &kp J   &kp L     &kp U      &kp Y         &kp SQT    &kp BACKSLASH
 &kp ESCAPE  &kp A      &kp R      &kp S             &kp T              &kp G                                                                                        &kp M   &kp N     &kp E      &kp I         &kp O      &kp SEMICOLON
 &kp HOME    &kp Z      &kp X      &kp C             &kp D              &kp V   &kp BACKSPACE  &kp DELETE  &linux_vm     &windows      &tmux      &kp RIGHT_CONTROL  &kp K   &kp H     &kp COMMA  &kp PERIOD    &kp SLASH  &kp END
-&magic 3 0  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &skq LSHIFT    &kp LCTRL   &kp LEFT_ALT  &kp LEFT_GUI  &kp ENTER  &kp SPACE                  &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &mo 2
+&magic 3 0  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &kp LSHIFT     &kp LCTRL   &kp LEFT_ALT  &kp LEFT_GUI  &kp ENTER  &kp SPACE                  &kp LEFT  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &mo 2
             >;
         };
 
