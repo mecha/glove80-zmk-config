@@ -159,7 +159,7 @@
 &kp GRAVE   &kp N1         &kp N2   &kp N3            &kp N4             &kp N5                                                                                            &kp N6  &kp N7    &kp N8    &kp N9        &kp N0     &kp F11
 &kp TAB     &kp Y          &kp P    &kp O             &kp U              &kp J                                                                                             &kp K   &kp D     &kp L     &kp C         &kp W      &kp EQUAL
 &kp ESCAPE  &kp I          &kp N    &kp E             &kp A              &kp SEMI                                                                                          &kp M   &kp H     &kp T     &kp S         &kp R      &kp MINUS
-&kp HOME    &kp Q          &kp B    &kp COMMA         &kp DOT            &kp FSLH  &kp BACKSPACE  &kp DELETE  &linux_vm     &windows      &kp LEFT_ALT  &kp RIGHT_CONTROL  &kp Z   &kp F     &kp G     &kp V         &kp X      &kp END
+&kp HOME    &kp Q          &kp Z    &kp COMMA         &kp DOT            &kp FSLH  &kp BACKSPACE  &kp DELETE  &linux_vm     &windows      &kp LEFT_ALT  &kp RIGHT_CONTROL  &kp B   &kp F     &kp G     &kp V         &kp X      &kp END
 &magic 3 0  &kp BACKSLASH  &kp SQT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET            &kp LSHIFT     &kp LCTRL   &kp LEFT_ALT  &kp LEFT_GUI  &kp ENTER     &kp SPACE                  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &mo 2
             >;
         };
