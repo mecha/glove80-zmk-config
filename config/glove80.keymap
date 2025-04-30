@@ -179,9 +179,9 @@
             bindings = <
 &trans  &trans    &trans   &trans    &trans                                                                              &trans  &trans  &trans  &trans  &trans
 &trans  &trans    &trans   &trans    &trans    &trans                                                     &trans         &trans  &trans  &trans  &trans  &trans
-&trans  &kp B     &kp Y    &kp O     &kp U     &kp SLASH                                                  &kp SEMICOLON  &kp D   &kp L   &kp W   &kp V   &kp Z
-&trans  &kp C     &kp I    &kp E     &kp A     &kp MINUS                                                  &kp EQUAL      &kp H   &kp T   &kp S   &kp N   &kp Q
-&trans  &kp G     &kp X    &kp J     &kp K     &kp COMMA  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOT        &kp R   &kp M   &kp F   &kp P   &trans
+&trans  &kp B     &kp Y    &kp O     &kp U     &kp EQUAL                                                  &kp SEMICOLON  &kp D   &kp L   &kp W   &kp V   &kp Z
+&trans  &kp C     &kp I    &kp E     &kp A     &kp COMMA                                                  &kp PERIOD     &kp H   &kp T   &kp S   &kp N   &kp Q
+&trans  &kp G     &kp X    &kp J     &kp K     &kp MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &kp SLASH      &kp R   &kp M   &kp F   &kp P   &trans
 &trans  &kp BSLH  &kp SQT  &kp LBKT  &kp RBKT             &trans  &trans  &trans  &trans  &trans  &trans                 &trans  &trans  &trans  &trans  &to 0
             >;
         };
