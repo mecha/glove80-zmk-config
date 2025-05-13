@@ -182,7 +182,7 @@
 &trans  &trans  &trans  &trans  &trans  &kp FSLH                                                   &kp EQUAL  &trans  &trans  &trans  &trans  &kp Z
 &trans  &trans  &trans  &trans  &trans  &kp SEMI                                                   &kp MINUS  &trans  &trans  &trans  &trans  &kp Q
 &trans  &kp B   &kp M   &kp J   &kp K   &kp COMMA  &trans  &trans  &trans  &trans  &trans  &trans  &kp DOT    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &to 0
             >;
         };
 
