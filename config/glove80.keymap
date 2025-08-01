@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define HYPER LC(LS(LG(LALT)))
@@ -147,23 +148,23 @@
 
         engram {
             bindings = <
-&kp F1      &kp F2    &kp F3   &kp F4    &kp F5                                                                                                           &kp F6    &kp F7    &kp F8  &kp F9     &kp F10
-&kp GRAVE   &kp N1    &kp N2   &kp N3    &kp N4    &kp N5                                                                                      &kp N6     &kp N7    &kp N8    &kp N9  &kp N0     &kp F11
-&kp TAB     &kp B     &kp Y    &kp O     &kp U     &kp FSLH                                                                                    &kp EQUAL  &kp D     &kp L     &kp W   &kp V      &kp Z
-&kp ESC     &kp C     &kp I    &kp E     &kp A     &kp SEMI                                                                                    &kp MINUS  &kp H     &kp T     &kp S   &kp N      &kp Q
-&kp HOME    &kp G     &kp X    &kp J     &kp K     &kp COMMA  &kp BSPC        &kp DEL    &trans        &trans        &kp RIGHT_ALT  &kp RCTRL  &kp DOT    &kp R     &kp M     &kp F   &kp P      &kp END
-&magic 2 0  &kp BSLH  &kp SQT  &kp LBKT  &kp RBKT             &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp RET        &kp SPACE             &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &mo 1
+&kp F1      &kp F2    &kp F3   &kp F4    &kp F5                                                                                                        &kp F6    &kp F7    &kp F8  &kp F9     &kp F10
+&kp GRAVE   &kp N1    &kp N2   &kp N3    &kp N4    &kp N5                                                                                   &kp N6     &kp N7    &kp N8    &kp N9  &kp N0     &kp F11
+&kp TAB     &kp B     &kp Y    &kp O     &kp U     &kp FSLH                                                                                 &kp EQUAL  &kp D     &kp L     &kp W   &kp V      &kp Z
+&kp ESC     &kp C     &kp I    &kp E     &kp A     &kp SEMI                                                                                 &kp MINUS  &kp H     &kp T     &kp S   &kp N      &kp Q
+&kp HOME    &kp G     &kp X    &kp J     &kp K     &kp COMMA  &kp BSPC        &kp DEL    &tog 1        &kp F12        &kp RCTRL  &kp LGUI   &kp DOT    &kp R     &kp M     &kp F   &kp P      &kp END
+&magic 2 0  &kp BSLH  &kp SQT  &kp LBKT  &kp RBKT             &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp RIGHT_ALT  &kp RET    &kp SPACE             &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &mo 1
             >;
         };
 
         lower_layer {
             bindings = <
-&kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT  &kp C_PP                                                                         &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP   &none            &kp PAUSE_BREAK
-&trans        &none         &none       &none       &none      &kp HOME                                                   &kp LPAR   &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp PSCRN
-&trans        &none         &none       &kp UP      &none      &kp END                                                    &kp RPAR   &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp SLCK
-&trans        &none         &kp LEFT    &kp DOWN    &kp RIGHT  &kp PG_UP                                                  &kp PRCNT  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &none
-&trans        &kp K_CMENU   &none       &kp F11     &kp F12    &kp PG_DN  &trans  &trans  &none   &trans  &trans  &trans  &kp COMMA  &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &trans
-&trans        &kp CAPS      &kp INS     &kp F11     &kp F12               &trans  &trans  &trans  &trans  &trans  &trans             &kp KP_N0   &kp KP_N0     &kp KP_DOT     &kp KP_ENTER     &trans
+&kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV  &kp C_NEXT  &kp C_PP                                                                          &kp C_MUTE      &kp C_VOL_DN    &kp C_VOL_UP     &none  &kp PRINTSCREEN
+&trans        &none         &none       &none       &none      &none                                                           &none  &none           &none           &none            &none  &none
+&trans        &none         &none       &kp UP      &none      &none                                                           &none  &none           &mmv MOVE_UP    &mkp MB2         &none  &none
+&kp CAPSLOCK  &none         &kp LEFT    &kp DOWN    &kp RIGHT  &kp PG_UP                                                       &none  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none  &none
+&trans        &none         &none       &none       &none      &kp PG_DN  &trans  &trans  &none   &trans  &mkp MB5   &mkp MB4  &none  &none           &none           &none            &none  &trans
+&trans        &none         &none       &none       &none                 &trans  &trans  &trans  &trans  &mkp MCLK  &mkp MB1         &none           &none           &none            &none  &trans
             >;
         };
 
