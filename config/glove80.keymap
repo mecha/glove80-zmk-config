@@ -98,8 +98,8 @@
 &kp GRAVE   &kp N1    &kp N2   &kp N3    &kp N4    &kp N5                                                                                  &kp N6     &kp N7    &kp N8    &kp N9  &kp N0     &kp F11
 &kp TAB     &kp B     &kp Y    &kp O     &kp U     &kp FSLH                                                                                &kp EQUAL  &kp D     &kp L     &kp W   &kp V      &kp Z
 &kp ESC     &kp C     &kp I    &kp E     &kp A     &kp SEMI                                                                                &kp MINUS  &kp H     &kp T     &kp S   &kp N      &kp Q
-&kp LSHFT   &kp G     &kp X    &kp J     &kp K     &kp COMMA  &kp BSPC        &kp DEL    &kp LGUI      &kp F12        &kp RGUI  &kp RCTRL  &kp DOT    &kp R     &kp M     &kp F   &kp P      &kp RSHIFT
-&magic 3 0  &kp BSLH  &kp SQT  &kp LBKT  &kp RBKT             &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp RIGHT_ALT  &kp RET   &kp SPACE             &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &mo 2
+&mo 2       &kp G     &kp X    &kp J     &kp K     &kp COMMA  &kp BSPC        &kp DEL    &kp LGUI      &kp F13        &kp RGUI  &kp RCTRL  &kp DOT    &kp R     &kp M     &kp F   &kp P      &mo 2
+&magic 3 0  &kp BSLH  &kp SQT  &kp LBKT  &kp RBKT             &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp RIGHT_ALT  &kp RET   &kp SPACE             &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp F12
             >;
         };
 
@@ -116,23 +116,23 @@
 
         lower_layer {
             bindings = <
-&kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV      &kp C_NEXT      &kp C_PP                                                                                  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &kp PRINTSCREEN
-&trans        &trans        &trans          &trans          &trans           &trans                                                           &trans  &trans      &trans        &trans        &trans  &trans
-&trans        &trans        &trans          &mmv MOVE_UP    &trans           &trans                                                           &trans  &trans      &trans        &trans        &trans  &trans
-&trans        &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PG_UP                                                        &trans  &trans      &trans        &trans        &trans  &trans
-&trans        &trans        &trans          &trans          &trans           &kp PG_DN  &mkp MB4  &mkp MB5  &trans    &trans  &to 1   &to 0   &trans  &trans      &trans        &trans        &trans  &trans
-&trans        &trans        &trans          &trans          &trans                      &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans  &trans          &trans      &trans        &trans        &trans  &trans
+&kp C_BRI_DN  &kp C_BRI_UP  &kp C_PREV      &kp C_NEXT      &kp C_PP                                                                                  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp SYSREQ  &kp PRINTSCREEN
+&trans        &trans        &trans          &trans          &trans           &trans                                                           &trans  &trans      &trans        &trans        &trans      &trans
+&trans        &trans        &trans          &mmv MOVE_UP    &trans           &trans                                                           &trans  &trans      &trans        &trans        &trans      &trans
+&trans        &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PG_UP                                                        &trans  &kp H       &kp J         &kp K         &kp L       &trans
+&trans        &trans        &trans          &trans          &trans           &kp PG_DN  &mkp MB4  &mkp MB5  &trans    &trans  &to 1   &to 0   &trans  &trans      &trans        &trans        &trans      &trans
+&trans        &trans        &trans          &trans          &trans                      &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans  &trans          &kp HOME    &kp PG_DN     &kp PG_UP     &kp END     &trans
             >;
         };
 
         magic_layer {
             bindings = <
-&bt BT_CLR   &none            &none            &none            &none                                                                                            &none     &none          &none      &none    &bt BT_CLR_ALL
-&none        &none            &none            &none            &none            &none                                                             &none         &none     &none          &none      &none    &none
-&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none         &none     &none          &none      &none    &none
-&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &out OUT_USB  &bt_0     &bt_1          &bt_2      &bt_3    &bootloader
-&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none         &none     &none          &none      &none    &sys_reset
-&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none                &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END  &none
+&bt BT_CLR   &none            &none            &none            &none                                                                                            &none  &none  &none  &none  &bt BT_CLR_ALL
+&none        &none            &none            &none            &none            &none                                                             &none         &none  &none  &none  &none  &none
+&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none         &none  &none  &none  &none  &none
+&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &out OUT_USB  &bt_0  &bt_1  &bt_2  &bt_3  &bootloader
+&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none         &none  &none  &none  &none         &none  &none  &none  &none  &sys_reset
+&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none                &none  &none  &none  &none  &none
             >;
         };
     };
