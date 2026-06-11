@@ -98,8 +98,8 @@
 &kp GRAVE   &kp N1    &kp N2   &kp N3    &kp N4    &kp N5                                                                                          &kp N6     &kp N7    &kp N8    &kp N9  &kp N0     &kp F11
 &kp TAB     &kp B     &kp Y    &kp O     &kp U     &kp FSLH                                                                                        &kp EQUAL  &kp D     &kp L     &kp W   &kp V      &kp Z
 &kp ESC     &kp C     &kp I    &kp E     &kp A     &kp SEMI                                                                                        &kp MINUS  &kp H     &kp T     &kp S   &kp N      &kp Q
-&mo 2       &kp G     &kp X    &kp J     &kp K     &kp COMMA  &kp BSPC        &kp DEL    &kp LGUI       &kp F13            &kp RGUI  &kp LEFT_ALT  &kp DOT    &kp R     &kp M     &kp F   &kp P      &mo 2
-&magic 3 0  &kp BSLH  &kp SQT  &kp LBKT  &kp RBKT             &kp LEFT_SHIFT  &kp LCTRL  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp RET   &kp SPACE                &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp F12
+&mo 2       &kp G     &kp X    &kp J     &kp K     &kp COMMA  &kp BSPC        &kp DEL    &kp LGUI      &kp F13        &kp RGUI  &kp RIGHT_CONTROL  &kp DOT    &kp R     &kp M     &kp F   &kp P      &mo 2
+&magic 3 0  &kp BSLH  &kp SQT  &kp LBKT  &kp RBKT             &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &kp RIGHT_ALT  &kp RET   &kp SPACE                     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp F12
             >;
         };
 
